@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-05-09T19:11:45+02:00</updated><id>/feed.xml</id><title type="html">Nick Kotov</title><subtitle>Exploring the latest tech trends and innovations. Join me on a journey of discovery in the world of technology.
+</subtitle><author><name>Nick Kotov</name></author><entry><title type="html">Why We Migrated All Projects to PostgreSQL</title><link href="/2023/05/03/why-we-migrated-all-projects-to-postgres.html" rel="alternate" type="text/html" title="Why We Migrated All Projects to PostgreSQL" /><published>2023-05-03T00:00:00+02:00</published><updated>2023-05-03T00:00:00+02:00</updated><id>/2023/05/03/why-we-migrated-all-projects-to-postgres</id><content type="html" xml:base="/2023/05/03/why-we-migrated-all-projects-to-postgres.html"><![CDATA[<p>As a member of our team, I am excited to share our experience of migrating all of our projects to PostgreSQL over the past few years. This journey has been a significant milestone for us, and I believe it is worth sharing our reasons for making this shift and the benefits we have experienced since then.</p>
+
+<p>Before the migration, we were using a variety of different databases, including MySQL, Oracle, and SQL Server, depending on the specific project’s requirements. We were facing numerous challenges in managing these different databases, such as complexity, compatibility, and maintenance costs. We knew that we needed to streamline our database infrastructure and decided to migrate all of our projects to PostgreSQL, an open-source relational database management system.</p>
+
+<p>One of the reasons we chose PostgreSQL was its ability to handle <a href="/2023/04/23/my-experience-with-schema-guard-for-database-schema-migration.html">complex database schemas</a>. Our existing projects were built with complex database schemas that required a robust and scalable database solution. PostgreSQL’s advanced data integrity and management features, scalability, and support for complex data types made it an ideal choice for us.</p>
+
+<p>Some of the database schemas that we used in our existing projects include:</p>
+
+<p>Hierarchical data structures: Our project included hierarchical data structures such as category trees and organizational charts. PostgreSQL’s support for recursive queries and Common Table Expressions (CTEs) allowed us to query these structures efficiently.</p>
+
+<p>Time-series data: We had projects that involved time-series data, such as sensor readings and log data. PostgreSQL’s support for temporal data types and range queries enabled us to store and query this data more efficiently.</p>
+
+<p>Spatial data: We had projects that involved spatial data, such as GPS coordinates and maps. PostgreSQL’s support for PostGIS, a spatial database extension, allowed us to store and query spatial data effectively.</p>
+
+<p>Multi-tenant architectures: We had projects that involved multi-tenant architectures, where multiple clients share the same database schema. PostgreSQL’s support for schema-level security and isolation allowed us to manage these projects more efficiently.</p>
+
+<p>Since we made the switch to PostgreSQL, we have experienced numerous benefits that have significantly improved our business operations:</p>
+
+<p>Improved Performance: PostgreSQL has provided us with better performance and faster query response times, which has significantly improved our user experience. We have also noticed a reduction in data corruption, which has been a significant issue for us in the past.</p>
+
+<p>Better Scalability: PostgreSQL’s ability to scale seamlessly has allowed us to handle large volumes of data without any performance issues. This has been a game-changer for us as we have grown our business over the past few years.</p>
+
+<p>Increased Flexibility: PostgreSQL’s support for a wide range of data types has allowed us to handle complex data structures with ease. We have also been able to use PostgreSQL’s advanced features, such as table partitioning, to optimize our database performance further.</p>
+
+<p>Enhanced Security: PostgreSQL’s advanced security features, such as row-level security and encryption, have provided us with better data protection and compliance with industry standards.</p>
+
+<p>Cost Savings: By using an open-source database system like PostgreSQL, we have been able to save significant costs associated with proprietary database solutions.</p>
+
+<p>In conclusion, migrating all of our projects to PostgreSQL over the past few years has been a significant milestone for our team. We are now using a more robust and scalable database solution that has significantly improved our business operations. PostgreSQL’s ability to handle complex database schemas, advanced data integrity and management features, scalability, community support, better performance, and compatibility with other tools have been the key reasons why we decided to make the switch. If you are considering migrating to PostgreSQL, I would highly recommend it.</p>]]></content><author><name>Nick Kotov</name></author><category term="database" /><category term="PostgreSQL" /><category term="migration" /><summary type="html"><![CDATA[Our journey of migrating to PostgreSQL, the benefits we've experienced, and how it has improved our business operations.]]></summary></entry><entry><title type="html">My Experience with Schema Guard for Database Schema Migration</title><link href="/2023/04/23/my-experience-with-schema-guard-for-database-schema-migration.html" rel="alternate" type="text/html" title="My Experience with Schema Guard for Database Schema Migration" /><published>2023-04-23T00:00:00+02:00</published><updated>2023-04-23T00:00:00+02:00</updated><id>/2023/04/23/my-experience-with-schema-guard-for-database-schema-migration</id><content type="html" xml:base="/2023/04/23/my-experience-with-schema-guard-for-database-schema-migration.html"><![CDATA[<p>As a software developer, I have faced numerous challenges in my career, but perhaps one of the most significant ones was when I had to migrate a database schema for a critical project. The database was complex, with multiple tables and relationships, and the migration process was crucial to ensure the smooth functioning of the application. That’s when I stumbled upon the database <a href="https://www.declanclark.uk/database-schema-migration-tools-choice-dilemma.php">schema migration tool</a> found on Declan Clark’s website.</p>
+
+<p>At first, I was intimidated by the thought of adapting this tool for our specific needs. Schema Guard had a lot of features, and I was unsure how to integrate it with our existing database management system. However, I was determined to master the tool and make it work for our team.</p>
+
+<p>The first step was to familiarize myself with the documentation. I spent two hours reading through the user manual and watching video tutorials to gain a better understanding of how the tool worked. I learned that Schema Guard used a YAML configuration file to define the migration steps, and that it could be easily integrated with PostgreSQL database management system.</p>
+
+<p>Next, I began experimenting with the tool in a test environment. I created a sample database and used the tool to make several changes to its schema. I ran into a few issues at first, but with some trial and error, I was able to iron out the kinks and get the tool working as intended.</p>
+
+<p>With a working knowledge of Schema Guard under my belt, I was ready to start adapting it for our team’s use. The first step was to create a custom YAML configuration file that defined our specific migration steps. This took some time, as I had to carefully consider each change we wanted to make to our database schema and how it would affect the rest of the system.</p>
+
+<p>Once I had the configuration file in place, I began the process of integrating the tool with our existing database. This involved creating a set of scripts that would automate the migration process, as well as writing some custom code to handle any unique requirements our system had.</p>
+
+<p>Throughout this process, I encountered several challenges. For example, our system relied heavily on stored procedures, which meant that any changes to the schema could potentially break the code that relied on those procedures. I had to carefully consider each migration step and test it thoroughly to ensure that it would not cause any issues.</p>
+
+<p>Another challenge was coordinating with the rest of my team. Database schema migration is a team effort, and I had to work closely with our DBAs and other developers to ensure that everyone was on the same page and that no one’s work would be disrupted by the changes we were making.</p>
+
+<p>Despite these challenges, I found the process of adapting Schema Guard to be incredibly rewarding. It was satisfying to see the tool working seamlessly with our system and to know that we were now able to make changes to our database schema quickly and safely.</p>
+
+<p>In the end, the hard work paid off. Our team now uses Schema Guard as our primary database schema migration tool, and we have been able to make significant changes to our database structure without any major disruptions to our system. I am proud to have been a part of this project and to have gained valuable skills in database schema migration in the process.</p>
+
+<p>In conclusion, adapting a database schema migration tool like Schema Guard is a challenging but rewarding task. It requires a deep understanding of both the tool itself and the system it is being integrated with, as well as careful coordination with other team members. However, with patience, persistence, and a willingness to learn, it is possible to successfully adapt a tool like Schema Guard and reap the benefits of safe and efficient database schema migration.</p>]]></content><author><name>Nick Kotov</name></author><category term="database" /><category term="PostgreSQL" /><category term="schema" /><category term="migration" /><summary type="html"><![CDATA[A First Person Account]]></summary></entry><entry><title type="html">My Adventures with Time Zone Changes While Traveling</title><link href="/2023/04/07/my-adventures-with-time-zone-changes-while-traveling.html" rel="alternate" type="text/html" title="My Adventures with Time Zone Changes While Traveling" /><published>2023-04-07T00:00:00+02:00</published><updated>2023-04-07T00:00:00+02:00</updated><id>/2023/04/07/my-adventures-with-time-zone-changes-while-traveling</id><content type="html" xml:base="/2023/04/07/my-adventures-with-time-zone-changes-while-traveling.html"><![CDATA[<p>I love to travel, and I’ve been fortunate enough to visit 10 different cities around the world. While each city has its own unique charm and attractions, one thing that I never really thought about before was the impact of time zone changes on my travels.</p>
+
+<p>As a computer science student, I’m pretty familiar with time zones and how they work :) But experiencing them firsthand can be a totally different story. Each time I traveled to a new city, I had to adjust to a new local time, which could be anywhere from one to several hours different from my home time zone. This made for some interesting experiences and challenges.</p>
+
+<p>To give you an idea of what I mean, here’s a list of the cities I visited and their local times with respect to London local time because of its zero meridian:</p>
+
+<ul>
+  <li><a href="http://www.timehall.com/time/United_States/P40F9">New York</a> local time is 5 hours behind London, in the Eastern Standard Time (EST) zone (UTC-5).</li>
+  <li><a href="http://www.timehall.com/time/France/P78">Paris</a> local time is 1 hour ahead of London, in the Central European Time (CET) zone (UTC+1).</li>
+  <li><a href="http://www.timehall.com/time/Japan/P9D">Tokyo</a> local time is 8 hours ahead of London, in the Japan Standard Time (JST) zone (UTC+9).</li>
+  <li><a href="http://www.timehall.com/time/Australia/P213">Sydney</a> local time is 10 hours ahead of London, in the Australian Eastern Standard Time (AEST) zone (UTC+10).</li>
+  <li><a href="http://www.timehall.com/time/Brazil/P53F">Rio de Janeiro</a> local time is 3 hours behind London, in the Brasilia Time (BRT) zone (UTC-3).</li>
+  <li><a href="http://www.timehall.com/time/South_Africa/P45AF">Cape Town</a> local time is 2 hours ahead of London, in the South Africa Standard Time (SAST) zone (UTC+2).</li>
+  <li><a href="http://www.timehall.com/time/Thailand/P102">Bangkok</a> local time is 7 hours ahead of London, in the Indochina Time (ICT) zone (UTC+7).</li>
+  <li><a href="http://www.timehall.com/time/United_Arab_Emirates/P12F">Dubai</a> local time is 4 hours ahead of London, in the Gulf Standard Time (GST) zone (UTC+4).</li>
+  <li><a href="http://www.timehall.com/time/India/P2134">Mumbai</a> local time is 5.5 hours ahead of London, in the India Standard Time (IST) zone (UTC+5.5).</li>
+  <li><a href="http://www.timehall.com/time/Canada/P7DF">Vancouver</a> local time is 8 hours behind London, in the Pacific Standard Time (PST) zone (UTC-8).</li>
+</ul>
+
+<p>The first time I experienced a time zone change was when I traveled from New York to Paris. The six-hour difference really threw me off, and it took me a few days to adjust. I was waking up early and going to bed late, which made it hard to enjoy everything the city had to offer. Plus, I kept forgetting to factor in the time difference when calling or messaging family and friends back home.</p>
+
+<p>My next stop was Tokyo, which was nine hours ahead of New York. This was a huge adjustment, and I found myself feeling jet-lagged for several days. I also had trouble keeping track of what time it was back home, which made it difficult to schedule calls or meetings with people in other time zones.</p>
+
+<p>When I arrived in Sydney, the time difference was only one hour ahead of Tokyo, but I still felt disoriented. It didn’t help that I had trouble sleeping on the plane, which made it hard to adjust to the new local time.</p>
+
+<p>Rio de Janeiro was a little easier to adjust to, as it was only one hour ahead of New York. However, I did have some trouble with scheduling, as I kept forgetting to factor in the time difference when setting up meetings with local contacts.</p>
+
+<p>Cape Town was two hours ahead of Rio, which wasn’t too bad, but I did find myself feeling more tired than usual. Bangkok was seven hours ahead of Cape Town, which meant that I had to adjust my sleeping schedule significantly.</p>
+
+<p>When I arrived in Dubai, the four-hour difference felt like a welcome relief after some of the larger jumps I had experienced. However, I still had to be mindful of the time difference when communicating with people back home.</p>
+
+<p>Mumbai was only a half-hour difference from Dubai, but it still took me some time to adjust. Vancouver was a full 11-hour difference from Mumbai, which meant that I had to reverse my sleep schedule completely.</p>
+
+<p>Overall, my travels taught me a lot about the challenges of time zone changes. While I enjoyed each city I visited, I also had to be mindful of my own physical and mental health, as well as the challenges of communication with people in other time zones. It was an experience that I’ll never forget, and it’s given me a new appreciation for the complexities of time zones and the challenges they can pose for travelers.</p>]]></content><author><name>Nick Kotov</name></author><category term="time" /><category term="travel" /><category term="local time" /><category term="time zone" /><summary type="html"><![CDATA[My story of traveling 10 cities and the challenges of time zone shifts]]></summary></entry></feed>
