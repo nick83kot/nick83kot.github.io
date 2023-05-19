@@ -35,7 +35,6 @@ if %ERRORLEVEL% NEQ 0 (
 )
 
 git push https://%USER%:%KEY%@github.com/%USER%/%USER%.github.io.git --all --force
-git -c user.name="%USER%" -c user.email="%MAIL%" commit -m "commit"
 if %ERRORLEVEL% NEQ 0 (
     echo "'git push' command filed with code: %ERRORLEVEL%"
     exit /B %ERRORLEVEL%
